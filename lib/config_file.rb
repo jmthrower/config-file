@@ -63,9 +63,11 @@ class ConfigFile
 
   def get_keys
     all = YAML.load_file(@path)
+    config_env = self.class.config.env.to_s
+    return all[config_env] if all[config_env]
     self.class.config.env_aliases.each do |al, env|
       str = al.to_s
-      return all[str] if all[str] && env == self.class.config.env
+      return all[str] if all[str] && env == config_env.to_sym
     end
     {}
   end

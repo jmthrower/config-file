@@ -1,3 +1,8 @@
+Version 0.0.4
+=========================
+
++ Default loading of actual, not aliased env
+
 Version 0.0.3
 =========================
 
