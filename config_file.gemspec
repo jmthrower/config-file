@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'config_file/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "config_file"
+  spec.name          = "config-file"
   spec.version       = ConfigFile::VERSION
   spec.authors       = ["Jessica Megan Thrower"]
   spec.email         = ["jmthrower@gmail.com"]
