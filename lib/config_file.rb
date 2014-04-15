@@ -57,7 +57,7 @@ class ConfigFile
     @data ||= if validate_existence
       get_keys
     else
-      Hash.new{|h,k| h[k] = ""}
+      {}
     end
   end
 
@@ -67,6 +67,6 @@ class ConfigFile
       str = al.to_s
       return all[str] if all[str] && env == self.class.config.env
     end
-    Hash.new{|h,k| h[k] = ""}
+    {}
   end
 end

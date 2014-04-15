@@ -47,7 +47,7 @@ c.validate_key!('api_key', /\A\w{22}\Z/)
 => nil
 
 Mandrill.api_key = c.data['api_key']
-=> ""
+=> nil
 
 ```
 

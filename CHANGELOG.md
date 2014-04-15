@@ -1,3 +1,8 @@
+Version 0.0.3
+=========================
+
++ Changed default key to nil, not string
+
 Version 0.0.2
 =========================
 
